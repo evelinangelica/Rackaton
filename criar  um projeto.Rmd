@@ -1,0 +1,53 @@
+---
+title: "Instruções para Criar Pacote"
+output: html_document
+---
+1. Repositório no Git
+2. Baixa o repositório na máquina
+3. Abrir o projeto no RStudio
+4. devtools::setup('diretório')
+5. entrar na pasta R
+6. novo script
+7. escreva uma #musthave função
+8. documente isso (Como??)
+9. #' na mesma ordem do help
+10. digite @ e veja suas opções. Exemplo: @param para 
+os argumentos da função
+11. não se esqueça do @export caso queira que apareça na somar::
+12. devtools::document() para criar a ajuda - usa roxygen2
+altera arquivo NAMESPACE
+13. devtools::use_mit_license() 
+14. devtools::check()
+15. commit
+16. push
+15. devtools::use_travis
+Saiba mais em: r-pkgs.had.co.nz
+13. 
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
